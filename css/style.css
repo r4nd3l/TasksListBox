@@ -1,0 +1,163 @@
+/* Default DevCorner Style Setting */
+
+:root{
+  --dc-: #28a745; /* #28a745 */
+  --gr-: #515151;
+  --wh-: #fefefe;
+  --sg-: #f7f7f7;
+  --lg-: #b9b9b9;
+  --shadow1-: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+  --shadow2-: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.08) inset;
+  --text-sh-: 2px 5px 2px rgba(33,33,33,0.25);
+  --card-: perspective(1000px) rotateY(-20deg) translateX(-20px);
+}
+
+.fa-code{
+  color: var(--dc-);
+}
+
+button::-webkit-focus-inner{
+  border: 0;
+}
+button::-moz-focus-inner{
+  border: 0;
+}
+button::-o-focus-inner{
+  border: 0;
+}
+button::-ms-focus-inner{
+  border: 0;
+}
+
+.center{
+  width: 50%;
+  margin: 10vh auto 0 auto;
+  text-align: center;
+}
+
+.center p:last-child{
+  margin: 1em auto 2em;
+  font-family: Roboto;
+  font-size: 1.2em;
+  color: var(--dc-);
+  background: rgba(255,255,255,0.8);
+  width: 120px;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+}
+
+.brand{
+  color: var(--gr-);
+  font-family: Roboto;
+  font-size: 3em;
+  text-shadow: var(--ts-);
+  margin: 0 auto;
+  padding: 0;
+}
+
+.slogan{
+  color: var(--gr-);
+  font-family: Roboto;
+  font-size: 1.2em;
+  text-shadow: var(--ts-);
+  margin: 0 auto;
+  padding: 0;
+}
+
+body{
+  background: url(../img/img_05.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Roboto;
+  padding: 0;
+  margin: 0;
+}
+
+.middle{
+  position: absolute;
+  top: 65vh;
+  left: 50vw;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+}
+
+.task-list{
+  width: 400px;
+  padding: 40px;
+  background: var(--dc-);
+  box-shadow: var(--shadow2-);
+}
+.task-list h2{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto 30px;
+}
+.task{
+  display: flex;
+  padding: 10px 10px;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid var(--sg-);
+  border-radius: 50px;
+  margin: 10px auto;
+  background: var(--sg-);
+  box-shadow: var(--shadow1-);
+}
+
+.task input:first-child{
+  position: absolute;
+  visibility: hidden;
+}
+
+.task i{
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--dc-);
+  text-align: center;
+  line-height: 48px;
+  font-size: 20px;
+  margin-right: 14px;
+  color: transparent;
+}
+
+.text{
+  font-size: 18px;
+  color: var(--dc-);
+}
+
+.task input:first-child:checked ~ i{
+  color: var(--dc-);
+}
+
+.task input:first-child:checked ~ .text{
+  text-decoration: line-through;
+  color: var(--dc-);
+}
+
+.task input:last-child{
+  color: var(--dc-);
+  border: none;
+  background: var(--sg-);
+  font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* End */
